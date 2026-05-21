@@ -39,5 +39,9 @@ public class Main {
         System.out.println("Queue:");
 
         queue.display();
+        // Dequeue
+        System.out.println("Dequeued Element: "
+                + queue.dequeue());
+        queue.display();
     }
 }

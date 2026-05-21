@@ -7,6 +7,14 @@ public class Queue<T> {
 
         linkedList.append(data);
     }
+    public T dequeue()
+    {
+       return linkedList.pop();
+    }
+    public boolean isEmpty()
+    {
+        return linkedList.isEmpty();
+    }
 
     // Display queue
     public void display() {
