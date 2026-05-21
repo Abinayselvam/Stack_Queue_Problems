@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args)
     {
-        System.out.println("Welcome to tje Stack and Queue Problem");
-        Stack<Integer> stack=new Stack<>();
+        System.out.println("Welcome to the Stack and Queue Problem");
+        Stack<Integer> stack =new Stack<>();
+        Queue<Integer> queue =new Queue<>();
 
         stack.push(70);
         stack.push(30);
@@ -28,6 +29,19 @@ public class Main {
 
             stack.display();
         }
-    }
 
+
+        // Enqueue elements
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
+
+        System.out.println("Queue:");
+
+        queue.display();
+        // Dequeue
+        System.out.println("Dequeued Element: "
+                + queue.dequeue());
+        queue.display();
+    }
 }

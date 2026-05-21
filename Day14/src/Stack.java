@@ -1,28 +1,35 @@
 public class Stack<T> {
-    LinkedList<T> linkedList=new LinkedList<>();
-    //push
-    public void push(T data)
-    {
+    LinkedList<T> linkedList =
+            new LinkedList<>();
+
+    // Push
+    public void push(T data) {
+
         linkedList.add(data);
     }
-    //peek
-    public T peek()
-    {
+
+    // Peek
+    public T peek() {
+
         return linkedList.peek();
     }
-    //pop
-    public T pop()
-    {
+
+    // Pop
+    public T pop() {
+
         return linkedList.pop();
     }
-    //check is empty
-    public boolean isEmpty()
-    {
+
+    // Empty check
+    public boolean isEmpty() {
+
         return linkedList.isEmpty();
     }
-    //display
-    public void display()
-    {
+
+
+    // Display
+    public void display() {
+
         linkedList.display();
     }
 }
