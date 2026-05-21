@@ -1,7 +1,7 @@
 public class Stack<T> {
     LinkedList<T> linkedList=new LinkedList<>();
     //push
-    public void add(T data)
+    public void push(T data)
     {
         linkedList.add(data);
     }
