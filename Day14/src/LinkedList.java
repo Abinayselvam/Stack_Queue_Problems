@@ -39,6 +39,26 @@ public class LinkedList<T> {
         return head == null;
     }
 
+    // Append at end
+    public void append(T data) {
+
+        Node<T> newNode = new Node<>(data);
+
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+
+        Node<T> temp = head;
+
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = newNode;
+    }
+
+
     // Display stack
     public void display() {
 
